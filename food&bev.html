@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Food & Beverage page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/my-css.css">
+</head>
+
+<body>
+    <header class="header">
+        <!--  Navigational content  -->
+        <div class="flex-container">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                <a href="index.html" class="navbar-brand"><img src="images/H-Logo.png" height="85" width=""
+                        alt="Haukai Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar" role="collapsible navigation bar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <h3>Home</h3>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a class="nav-link" href="food&bev.html">
+                                <h3>Food & Beverage</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservations.html">
+                                <h3>Reservations</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                <h3>Contact</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hours.html">
+                                <h3>Hours</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="staff.html">
+                                <h4>Staff</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--  Main content  -->
+    <main class="food-beverage">
+        <div class="container-fluid">
+            <!--  Navigation Tabs  -->
+
+            <ul class="nav nav-pills nav-justified" role="tab list" id="myTab">
+                <li class="nav-item">
+                    <a class="nav-link active" a data-toggle="tab" href="#appetizers">Appetizers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#main">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#dessert">Dessert</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#beverages">Beverages</a>
+                </li>
+            </ul>
+            </nav>
+            <!--  Tab panes  -->
+            <div class="tab-content">
+
+                <div id="appetizers" class="container tab-pane active"><br>
+                    <h1>Appetizers</h1>
+                    <table>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/rewena_bread.jpg" width="110px" height="80px" alt="Rewena Bread">
+                            </td>
+                            <td>
+                                <h2>REWENA BREAD</h2>
+                            </td>
+                            <td>
+                                <h2>10</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Traditional M&amacr;ori bread</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/paua_fritters.jpg" width="110px" height="80px" alt="Rewena Bread">
+                            </td>
+                            <td>
+                                <h2>PAUA FRITTER</h2>
+                            </td>
+                            <td>
+                                <h2>16</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Finely diced pieces of paua, served with a side salad and horopito dressing</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/raw_fish.jpg" width="110px" height="80px" alt="Rewena Bread">
+                            </td>
+                            <td>
+                                <h2>RAW FISH</h2>
+                            </td>
+                            <td>
+                                <h2>20</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Dried snapper fish marinated in coconut cream, served with tomatoes, and spring
+                                    onions</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/poached_salmon.jpg" width="110px" height="80px" alt="Rewena Bread">
+                            </td>
+                            <td>
+                                <h2>POACHED SALMON </h2>
+                            </td>
+                            <td>
+                                <h2>22</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Salmon poached in an orange and pistachio glaze, served with rewena bread</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/seafood_basket 2048x2048.jpg" width="110px" height="80px"
+                                    alt="Rewena Bread">
+                            </td>
+                            <td>
+                                <h2>SEAFOOD BASKET</h2>
+                            </td>
+                            <td>
+                                <h2>25</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns</h5>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+                <div id="main" class="container tab-pane fade"><br>
+                    <h1>MAIN</h1>
+                    <table>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/fish_of_the_day 2048x2048.jpg" width="110px" height="80px"
+                                    alt="Battered fish and kumara fries">
+                            </td>
+                            <td>
+                                <h2>FISH OF THE DAY</h2>
+                            </td>
+                            <td>
+                                <h2>25</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Beer-battered fish and kumara fries, served with a side salad and homemade tartare
+                                </h5>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/mussels_and_scallops.jpg" width="110px" height="80px"
+                                    alt="Mussels and scallops">
+                            </td>
+                            <td>
+                                <h2>MUSSELS AND SCALLOPS</h2>
+                            </td>
+                            <td>
+                                <h2>25</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Steamed mussel & scallop mousse, honey and soy broth</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/seafood_chowder.jpg" width="110px" height="80px" alt="Seafood chowder">
+                            </td>
+                            <td>
+                                <h2>SEAFOOD CHOWDER</h2>
+                            </td>
+                            <td>
+                                <h2>30</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Creamy chowder filled with tarakihi, prawn, hoki, scallops and mussels, served with
+                                    flatbread</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/pork_belly.jpg" width="110px" height="80px" alt="Pork belly">
+                            </td>
+                            <td>
+                                <h2>PORK BELLY</h2>
+                            </td>
+                            <td>
+                                <h2>30</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Slow cooked pork belly served on a bed of apple slaw with roasted kumera and crispy
+                                    noodles</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/lamb_steak.jpg" width="110px" height="80px"
+                                    alt="Lamb steak with carrots">
+                            </td>
+                            <td>
+                                <h2>LAMB STEAK</h2>
+                            </td>
+                            <td>
+                                <h2>33</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>New Zealand lamb coated in a kawakawa crumb, served with Dijon-mustard-glazed
+                                    carrots, roasted
+                                    butternut squash and mushroom jus</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/venison.jpg" width="110px" height="80px"
+                                    alt="Venison with salad, and glazed plums">
+                            </td>
+                            <td>
+                                <h2>VENISON</h2>
+                            </td>
+                            <td>
+                                <h2>33</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Venison crusted with Horopito, served with glazed plums, cabbage salad and red wine
+                                    jus</h5>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div id="dessert" class="container tab-pane fade"><br>
+                    <h1>DESSERT</h1>
+                    <table>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/kapiti_ice_cream.jpg" width="110px" height="80px"
+                                    alt="Strawberry ice cream with fresh raspberries">
+                            </td>
+                            <td>
+                                <h2>KAPITI ICE CREAM</h2>
+                            </td>
+                            <td>
+                                <h2>10</h2>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <h5>Check for daily specials</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/steamed_pudding.jpg" width="110px" height="80px" alt="Steamed pudding">
+                            </td>
+                            <td>
+                                <h2>STEAMED PUDDING</h2>
+                            </td>
+                            <td>
+                                <h2>12</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Golden-syrup-flavoured steam pudding, served with vanilla ice cream</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/mini_pavlova.jpg" width="110px" height="80px"
+                                    alt="Mini pavlova topped with berries">
+                            </td>
+                            <td>
+                                <h2>MINI PAVLOVA</h2>
+                            </td>
+                            <td>
+                                <h2>16</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Mini pavlova, served with kawakawa and lemon-infused cream and fresh fruit</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="images/banoffee_pie.jpg" width="110px" height="80px"
+                                    alt="Banoffee pie with bananas and fresh cream">
+                            </td>
+                            <td>
+                                <h2>BANOFFEE PIE</h2>
+                            </td>
+                            <td>
+                                <h2>16</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Toffee, fresh bananas and fresh cream</h5>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="beverages" class="container tab-pane fade"><br>
+                    <div class="container-fluid">
+                        <h1>BEVERAGES</h1>
+                        <div class="row">
+
+                            <div class="col">
+                                <h2>RED</h2>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <th></th>
+                                        <th>B/G</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Terrace Edge Pinot, 2012, Wairarapa</td>
+                                            <td>53/13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Altitude Pinot Noir, 2010, Marlborough</td>
+                                            <td>64/15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Greystone Pinot Noir, 2012, Wairarapa</td>
+                                            <td>73/17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Terrace Edge, Syrah, 2012, Wairarapa</td>
+                                            <td>53/13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Altitude Syrah, 2010, Marlborough</td>
+                                            <td>64/15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Greystone Syrah, 2012, Wairarapa</td>
+                                            <td>73/17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pegasus Bay Merlot, 2013, Waipara</td>
+                                            <td>65/14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pegasus Bay Pinot, 2013, Waipara</td>
+                                            <td>110</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col">
+                                <h2>WHITE</h2>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <th></th>
+                                        <th>B/G</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Spade Oak Pinot Gris, 2011, Gisborne</td>
+                                            <td>40/10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maude Pinot Gris, 2017, Otago</td>
+                                            <td>49.50/11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Charles Wiffen Chardonnay, 2013, Otago</td>
+                                            <td>48/11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Amisfield, Riesling, 2010, Otago</td>
+                                            <td>53/12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lamont Riesling, 2010, Otago</td>
+                                            <td>57/13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Elephat Hill Viognier, 2013, Hawke's Bay</td>
+                                            <td>55/12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Folium Sauvignon Blanc, 2011, Marlborough</td>
+                                            <td>52/11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Billecart-Salmon Brut Reserve, France</td>
+                                            <td>120</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col">
+                                <h2>BEER AND CIDER</h2>
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Garage project range</td>
+                                            <td>11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tuatara range</td>
+                                            <td>11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Panhead range</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coopers ale</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Heineken</td>
+                                            <td>11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Moa cider</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Crooked cider</td>
+                                            <td>10</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col">
+                                <h2>NON-ALCOHOLIC</h2>
+                                <table class="table table-striped">
+                                    <tbody>
+
+                                        <tr>
+                                            <td>Mineral water</td>
+                                            <td>4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Soft drinks</td>
+                                            <td>4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Juice</td>
+                                            <td>4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coffee</td>
+                                            <td>4.50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tea</td>
+                                            <td>3.50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Moa cider</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Crooked cider</td>
+                                            <td>10</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="flex-container">
+            <nav class="navbar navbar-expand-sm bottom bg-dark navbar-dark">
+
+                <div class="footer-col">
+                    <ul id="contact-details">
+                        <li>
+                            <h6>Contact Details: (09) 401 4019</h5>
+                        </li>
+                        <li>
+                            <h6>haukai@gmail.com</h6>
+                        </li>
+                        <li>
+                            <h6>1 Island Street, Kerikeri, Bay of Islands</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p>ALL RIGHTS RESERVED. &copy; COPYRIGHT 2023 THE HAUKAI RESTAURANT LTD</p>
+                    <a href="#">
+                        <p>PRIVACY POLICY</p>
+                    </a>
+                </div>
+                <div class="footer-col">
+                    <div id="social-media">
+                        <h4>Follow us</h4>
+                        <div class="social-links"></div>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
