@@ -15,9 +15,10 @@
 </head>
 
 <body>
+    <!--  Header that is viewed across all pages of the website  -->
     <header class="header">
-        <!--  Navigational content  -->
         <div class="flex-container">
+            <!--  A horizontal navigation bar that is replaced by a hamburger menu for mobile devices  -->
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
                 <a href="index.html" class="navbar-brand"><img src="images/logo.svg" height="85" width="125"
                         alt="Haukai Logo"></a>
@@ -66,25 +67,24 @@
     <main class="food-beverage">
         <div class="container-fluid">
             <!--  Navigation Tabs  -->
-            
-            <ul class="nav nav-pills nav-justified" role="tab list" id="myTab">
-                <li class="nav-item">
-                    <a class="nav-link active" a data-toggle="tab" href="#appetizers">Appetizers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#main">Main</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#dessert">Dessert</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#beverages">Beverages</a>
-                </li>
-            </ul>
+            <nav>
+                <ul class="nav nav-pills nav-justified" id="myTab">
+                    <li class="nav-item">
+                        <a class="nav-link active" a data-toggle="tab" href="#appetizers">Appetizers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#main">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#dessert">Dessert</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#beverages">Beverages</a>
+                    </li>
+                </ul>
             </nav>
             <!--  Tab panes  -->
-            <div class="tab-content">
-
+            <div class="tab-content" >
                 <div id="appetizers" class="container tab-pane active"><br>
                     <h1>Appetizers</h1>
                     <table>
@@ -541,6 +541,7 @@
     <!--  Footer that is viewed across all pages of the website  -->
     <footer class="footer">
         <div class="flex-container">
+            <!--  A horizontal navigation bar that is responsive for mobile devices  -->
             <nav class="navbar navbar-expand-sm bottom bg-dark navbar-dark">
 
                 <div class="footer-col">
