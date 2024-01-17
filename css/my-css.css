@@ -45,7 +45,9 @@ main {
 }
 
 .title-page {
-    background-image: url("/images/background.jpg");
+    background-image: url("/BIT607-Haukai/images/background\ big\ .jpg");
+    max-width: 100%;
+    max-height: auto;
     background-size: cover;
     background-repeat: no-repeat;
 
