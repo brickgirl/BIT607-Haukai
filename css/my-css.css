@@ -1,9 +1,11 @@
+
 * {
     box-sizing: border-box;
 }
 
+/*  Header Logo  */
 #logo {
-   a:hover{
+    a:hover{
     padding:none;
     color:transparent;
    }
@@ -16,50 +18,57 @@ header a:link{
     
 }
 
+/*  active Link  */
 .active {
     background-color:#777;
 }
 
+/* body element across all pages  */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/*  header element across all pages  */
 header {
     width: 100%;
 
 }
 
-
+/*  Collapsible Navigation Bar  */
 #collapsibleNavbar {
     justify-content: right;
 
 }
 
+/*  Header list  */
 header li {
     padding: 25px;
     
 }
 
+/*  header image  */
 header img {
     padding-top: 0;
+    border: none;
 }
 
+/*  main element  */
 main {
     width: auto;
-    height: 800px;
+    height: 900px;
     padding-top: 10px;
     margin-top: 80px;
 }
 
+/*  home page  */
 .title-page {
     background-image: url("/BIT607-Haukai/images/background.jpg");
     max-width: 100%;
-    
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
+/*  company name image  */
 .company-name {
     display: flex;
     height: 460px;
@@ -75,6 +84,7 @@ main {
     }
 }
 
+/*  call to action button  */
 .cta_button {
     display: flex;
     padding: 15px 30px 10px 30px;
@@ -88,6 +98,7 @@ main {
     font-size: 2em;
 }
 
+/*  footer  */
 footer {
     width: 100%;
     flex-wrap: wrap;
@@ -98,18 +109,19 @@ footer {
     
 }
 
+/*  navigation bar  */
 .navbar {
     width: 100%;  
     justify-content: space-between;
     text-align: center;
 }
 
+/*  contact details  */
 #contact-details {
     list-style-type: none;
 }
 
-
-
+/*  food & beverage page  */
 .food-beverage {
     margin-top: 80px;
     margin-bottom: 50px;
@@ -122,70 +134,64 @@ footer {
     }
 }
 
+/*  images  */
 div.image{
     width: 15%;
     float: left;
 }
 
+/*  items  */
 div.item{
     width: 85%;
     overflow:auto;
 }
 
+/*  amount  */
 div.amount{
     width:15%;
     float: right;
 }
 
-table {
-    width: 100%;
-    border-spacing: 20px;
-
-    td {
-        height: 50px;
-    }
-}
-
-table img {
+img {
     border: #777 solid 1px;
 }
 
+/* menu tab content  */
 .tab-content {
-    max-width: 100%;
-    
+    max-width: 100%; 
     margin-left: 1%;
     margin-right: 1%;
-
     h2 {
         color: rgb(97, 11, 11);
     }
 
 }
 
+/*  menu tabs  */
 #myTab {
-    margin-top: 30px;
+    margin-top: 28px;
     background-color: #c5c4c4;
     font-size: x-large;
     a:link {
         color: rgb(97, 11, 11);
-        }
-    
-    a:hover {
-        background-color:#78a1ed;
     }
-
+    a:hover {
+        background-color:#929ec9;
+    }
 }
 
+/*  beverage titles  */
 #beverages h3 {
     color: rgb(97, 11, 11);
 
 }
 
+/*  contact details list  */
 ul#contact_details {
     list-style-type: none;
-
 }
 
+/*  reservations layout  */
 .reservations {
     display: flex;
     flex-wrap: wrap;
@@ -194,6 +200,7 @@ ul#contact_details {
     margin-top: 80px;
 }
 
+/*  contact page  */
 .contact-page {
     background-image: url("/BIT607-Haukai/images/weaving.jpg");
     background-size: cover;
@@ -201,7 +208,7 @@ ul#contact_details {
     margin-bottom: 40px;
 }
 
-
+/*  container layout  */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -212,16 +219,18 @@ ul#contact_details {
     border: #777 solid 3px;
 }
 
+/*  contact page container  */
 #contact-container {
     background-color: #7e7805;
- 
 }
 
+/* hours page layout  */
 .hours-page{
     background-color: rgba(105, 123, 130, 0.67);
     margin-bottom: 20px;
 }
 
+/*  flex-container  */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -229,6 +238,7 @@ ul#contact_details {
     margin-top: 30px;
 }
 
+/*  hours layout  */
 .hours {
     display: flex;
     flex-direction: column;
@@ -238,24 +248,30 @@ ul#contact_details {
     border-radius: 5px;
 }
 
+/* picture */
 .picture {
     margin-left: auto;
     margin-right: auto;
 }
 
+/*  waiata embedded video  */
+.waiata {
+    padding-left: 45px;
+}
+
+/*  google form  */
 .google-form {
     margin-bottom: 200px;
     overflow: scroll;
     max-width: 650;
 }
+
+/*  google map  */
 #google-map {
     max-width: 100%;
 }
 
-
-
-
-
+/*  responsive layout  */
 @media screen and (max-width:600px) {
     h1 {
         font-size: 1.2em;
@@ -291,7 +307,6 @@ ul#contact_details {
         display: none;
     }
 
-
     .reservations .company-name {
         display: none;
     }
@@ -323,7 +338,4 @@ ul#contact_details {
         width: 100%; 
         height: 100%;
     }
-
-    
-
 }
