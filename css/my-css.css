@@ -2,27 +2,30 @@
     box-sizing: border-box;
 }
 
-a:link,
-a:visited {
-    color: whitesmoke;
+#logo {
+   a:hover{
+    padding:none;
+    color:transparent;
+   }
 }
 
-
-a:hover,
-a:active {
+/* Link status*/
+header a:link{
     color: black;
-
+    background-color: rgba(115, 19, 19, 0.9);
+    
 }
 
+.active {
+    background-color:#777;
+}
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
 header {
     width: 100%;
-
 
 }
 
@@ -34,6 +37,7 @@ header {
 
 header li {
     padding: 25px;
+    
 }
 
 header img {
@@ -87,9 +91,11 @@ main {
 footer {
     width: 100%;
     flex-wrap: wrap;
-    background-color: #777;
-    padding: 5px;
+    background-color: rgb(90, 83, 53);
+    padding: 5px 7px 5px 7px;
     color: whitesmoke;
+    padding-top:7px;
+    
 }
 
 .navbar {
@@ -116,6 +122,21 @@ footer {
     }
 }
 
+div.image{
+    width: 15%;
+    float: left;
+}
+
+div.item{
+    width: 85%;
+    overflow:auto;
+}
+
+div.amount{
+    width:15%;
+    float: right;
+}
+
 table {
     width: 100%;
     border-spacing: 20px;
@@ -136,16 +157,23 @@ table img {
     margin-right: 1%;
 
     h2 {
-        color: rgb(97, 11, 11)
+        color: rgb(97, 11, 11);
     }
 
 }
 
-#myTab li a {
+#myTab {
     margin-top: 30px;
-    border-color: blue;
-    background-color: rgb(97, 11, 11);
+    background-color: #c5c4c4;
     font-size: x-large;
+    a:link {
+        color: rgb(97, 11, 11);
+        }
+    
+    a:hover {
+        background-color:#78a1ed;
+    }
+
 }
 
 #beverages h3 {
@@ -162,17 +190,17 @@ ul#contact_details {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: black;
-    margin-top: 70px;
+    background-color: rgb(90, 83, 53);
+    margin-top: 80px;
 }
 
 .contact-page {
     background-image: url("/BIT607-Haukai/images/weaving.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
 }
 
-.contact-page {
-    background-color: whitesmoke;
-}
 
 .container {
     display: flex;
@@ -180,13 +208,34 @@ ul#contact_details {
     flex-direction: row;
     margin-top: 90px;
     padding: 30px;
-    background-color: rgb(235, 239, 241);
+    background-color: #ebeff1;
     border: #777 solid 3px;
 }
 
 #contact-container {
-    background-color: rgb(126, 120, 5);
+    background-color: #7e7805;
+ 
+}
 
+.hours-page{
+    background-color: rgba(105, 123, 130, 0.67);
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border:#777 solid 2px;
+    border-radius: 5px;
 }
 
 .picture {
@@ -197,69 +246,14 @@ ul#contact_details {
 .google-form {
     margin-bottom: 200px;
     overflow: scroll;
+    max-width: 650;
 }
-
-
-
-/*.logo {
-    display: flex;    
-}
-
-
-
-.company_name_minor {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-    margin-left: 0%;
-    border-radius: 5px;
-}
-
-.nav-item {
-    padding-left: 50px;
-}
-h2,h3,h4,h5,h6 {
-    
-    color:whitesmoke
-}
-
-h6 {
-    
-    font-size: 1.5em;
-}
-
-
-
-.co_details {
-    display:flex;
-    margin-bottom: 0%;
-    background-color: rgba(115, 19, 19, 0.7);
-    color: whitesmoke;
-}
-
-#title_page a {
-    text-decoration: none;
-    color: whitesmoke;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left:18px;
-    padding-right:18px;
-    border-radius: 15px;
-}
-
-
-
-a {
-    color:black;
-}
-*/
 #google-map {
     max-width: 100%;
 }
 
-#google-form {
-    max-width: fit-content;
-}
+
+
 
 
 @media screen and (max-width:600px) {
@@ -282,6 +276,7 @@ a {
 @media (max-width: 600px) {
     .flex-container {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 
@@ -292,13 +287,10 @@ a {
 }
 
 @media only screen and (max-width:600px) {
-    #contact-details {
+    #copyright {
         display: none;
     }
 
-    #social-media {
-        display: none;
-    }
 
     .reservations .company-name {
         display: none;
@@ -307,4 +299,31 @@ a {
     .reservations .picture {
         display: none;
     }
+
+    .hours-page .company-name {
+        display: none;
+    }
+
+    .contact-page .company-name {
+        display: none;
+    }
+
+    .responsiveCal {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+    
+    }
+
+    .responsiveCal iframe {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+    }
+
+    
+
 }
