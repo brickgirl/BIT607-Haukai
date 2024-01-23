@@ -344,4 +344,7 @@ ul#contact_details {
         display: none;
     }
 
+    #logo {
+        display:contents;
+    }
 }
