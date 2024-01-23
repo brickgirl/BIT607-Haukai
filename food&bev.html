@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Food & Beverage page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/my-css.css">
+</head>
+
+<body>
+    <!--  Header that is viewed across all pages of the website  -->
+    <header class="header">
+        <!--  Navigational content  -->
+        <div class="flex-container">
+            <!--  A horizontal navigation bar that is replaced by a hamburger menu for mobile devices  -->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                <a href="index.html" class="navbar-brand"><img src="images/logo.svg" height="85" width="125"
+                        alt="Haukai Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <!-- Navigational List  -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <h3>Home</h3>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a class="nav-link" href="food&bev.html">
+                                <h3>Food & Beverage</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservations.html">
+                                <h3>Reservations</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                <h3>Contact</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hours.html">
+                                <h3>Hours</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--  Main content  -->
+    <main class="food-beverage">
+        <div class="container-fluid">
+                
+                <!--  Navigation Tabs  -->            
+                <ul class="nav nav-pills nav-justified" id="myTab">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#appetizers"><h3><strong>Appetizers</strong></h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#main"><h3><strong>Main</strong></h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#dessert"><h3><strong>Dessert</strong></h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#beverages"><h3><strong>Beverages</strong></h3></a>
+                    </li>
+                </ul>
+            
+            <!--  Tab panes  -->
+            <div class="tab-content" >
+                <div id="appetizers" class="container tab-pane active"><br>
+                    <h1>Appetizers</h1>
+                    <div class="appetizer-container">
+                        <div class="image">
+                            <img src="images/rewena_bread.jpg" width="110" height="80" 
+                            alt="Crusty M&amacr;ori Bread">
+                        </div>
+                        <div class="item">
+                            <h2>REWENA BREAD &nbsp;10</h2>
+                            <h5>Traditional M&amacr;ori bread</h5>
+                        </div>
+                        <hr>
+                        <div class="image">
+                            <img src="images/paua_fritters.jpg" width="110" height="80" 
+                            alt="Paua fritters plated with dressing and sauce">
+                        </div>
+                        <div class="item">
+                            <h2>PAUA FRITTER &nbsp; 16</h2>
+                            <h5>Finely diced pieces of paua, served with a side salad and horopito dressing</h5>
+                        </div>
+                        <hr>
+                        <div class="image">
+                            <img src="images/raw_fish.jpg" width="110" height="80" 
+                            alt="Fish marinated in coconut cream plated in a bowl with salad">
+                        </div>
+                        <div class="item">
+                            <h2>RAW FISH &nbsp;20</h2>
+                            <h5>Dried snapper fish marinated in coconut cream, served with tomatoes, and spring onions</h5>
+                        </div>
+                        <hr>
+                        <div class="image">
+                            <img src="images/poached_salmon.jpg" width="110" height="80" 
+                            alt="Poached salmon plated with orange sauce and wedges of lime">
+                        </div>
+                        <div class="item">
+                            <h2>POACHED SALMON &nbsp;22</h2>
+                            <h5>Salmon poached in an orange and pistachio glaze, served with rewena bread</h5>
+                        </div>
+                        <hr>
+                        <div class="image">
+                            <img src="images/seafood_basket.jpg" width="110" height="80" 
+                            alt="Deep fried seafood piled on a plate">
+                        </div>
+                        <div class="item">
+                            <h2>SEAFOOD BASKET &nbsp;25</h2>
+                            <h5>Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns</h5>
+                        </div>
+                    </div>
+                </div>            
+                      
+                <div id="main" class="container tab-pane fade"><br>
+                    <h1>MAIN</h1>
+                        <div class="main">
+                    <div class="image">
+                        <img src="images/fish_of_the_day.jpg" width="110" height="80" 
+                        alt="Battered fish, kumara fries plated with salad and dressing">
+                    </div>
+                    <div class="item">
+                        <h2>FISH OF THE DAY &nbsp;25</h2>
+                        <h5>Beer-battered fish and kumara fries, served with a side salad and homemade tartare</h5>
+                    </div>
+                    <hr>
+                    <div class="image">
+                        <img src="images/mussels_and_scallops.jpg" width="110" height="80"
+                        alt="Steamed mussels and scallop mousse, balancing in a bowl of broth">
+                    </div>
+                    <div class="item">
+                        <h2>MUSSELS AND SCALLOPS &nbsp;25</h2>
+                        <h5>Steamed mussel & scallop mousse, honey and soy broth</h5>
+                    </div>
+                    <hr>
+                    <div class="image">
+                        <img src="images/seafood_chowder.jpg" width="110" height="80" 
+                        alt="Seafood chowder plated in a bowl">
+                    </div>
+                    <div class="item">
+                        <h2>SEAFOOD CHOWDER &nbsp;30</h2>
+                        <h5>Creamy chowder filled with tarakihi, prawn, hoki, scallops and mussels, served with
+                            flatbread</h5>
+                    </div>
+                    <hr>
+                    <div class="image">
+                        <img src="images/pork_belly.jpg" width="110" height="80" 
+                        alt="Pork belly sliced and served on a wooden board">
+                    </div>
+                    <div class="item">
+                        <h2>PORK BELLY &nbsp;30</h2>
+                        <h5>Slow cooked pork belly served on a bed of apple slaw with roasted kumera and crispy
+                            noodles</h5>
+                    </div>
+                    <hr>
+                    <div class="image">
+                        <img src="images/lamb_steak.jpg" width="110" height="80" 
+                        alt="Glazed lamb steak plated with carrots and butternut squash">
+                    </div>
+                    <div class="item">
+                        <h2>LAMB STEAK &nbsp;33</h2>
+                        <h5>New Zealand lamb coated in a kawakawa crumb, served with Dijon-mustard-glazed
+                            carrots, roasted butternut squash and mushroom jus</h5>
+                    </div>
+                    <hr>
+                    <div class="image">
+                        <img src="images/venison.jpg" width="110" height="80" 
+                        alt="Venison plated with salad, and glazed plums">
+                    </div>
+                    <div class="item">
+                        <h2>VENISON &nbsp;33</h2>
+                        <h5>Venison crusted with Horopito, served with glazed plums, cabbage salad and red wine
+                            jus</h5>
+                    </div>
+                </div>
+                </div>
+                            
+                <div id="dessert" class="container tab-pane fade"><br>
+                    <h1>DESSERT</h1>
+                    <div class="dessert">
+                        <div class="image">
+                            <img src="images/kapiti_ice_cream.jpg" width="110" height="80"
+                                    alt="Strawberry ice cream with fresh raspberries">
+                        </div>
+                        <div class="item">
+                            <h2>KAPITI ICE CREAM &nbsp;10</h2>
+                            <h5>Check for daily specials</h5>
+                        </div>
+                        <hr>
+                        <div class="image">
+                            <img src="images/steamed_pudding.jpg" width="110" height="80" 
+                            alt="Steamed pudding plated in a bath of sauce, topped with icecream">
+                        </div>
+                        <div class="item">
+                            <h2>STEAMED PUDDING &nbsp;12</h2>
+                            <h5>Golden-syrup-flavoured steam pudding, served with vanilla ice cream</h5>
+                        </div>
+                        <hr>
+                        <div class="image">
+                            <img src="images/mini_pavlova.jpg" width="110" height="80"
+                            alt="Mini pavlova topped with fresh summer berries">
+                        </div>
+                        <div class="item">
+                            <h2>MINI PAVLOVA &nbsp;16</h2>
+                            <h5>Mini pavlova, served with kawakawa and lemon-infused cream and fresh fruit</h5>
+                        </div>
+                        <hr>
+                        <div class="image">
+                            <img src="images/banoffee_pie.jpg" width="110" height="80" 
+                            alt="Banana and toffee pie with bananas and fresh cream">
+                        </div>
+                        <div class="item">
+                            <h2>BANOFFEE PIE &nbsp;16</h2>
+                            <h5>Toffee, fresh bananas and fresh cream</h5>
+                        </div>        
+                    </div>
+                </div>
+
+                <div id="beverages" class="container tab-pane fade"><br>
+                    <h1>BEVERAGES</h1>
+                    <div class="drinks">    
+                        <div class="amount">
+                            <h3>B/G</h3>
+                        </div>
+                        <div class="item">
+                            <h2>RED</h2>
+                        </div>
+                        <div class="amount">
+                            <h4>53/13</h4>
+                        </div>
+                        <div class="item">                            
+                            <h4>Terrace Edge Pinot, 2012, Wairarapa</h4>
+                        </div>
+                        <hr>      
+                        <div class="amount">
+                            <h4>64/15</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Altitude Pinot Noir, 2010, Marlborough</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>73/17</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Greystone Pinot Noir, 2012, Wairarapa</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>53/13</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Terrace Edge, Syrah, 2012, Wairarapa</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>64/15</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Altitude Syrah, 2010, Marlborough</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>73/17</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Greystone Syrah, 2012, Wairarapa</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>65/14</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Pegasus Bay Merlot, 2013, Waipara</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>110</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Pegasus Bay Pinot, 2013, Waipara</h4>
+                        </div>
+                        <hr>
+                        <br><br>
+                        <div class="amount">
+                            <h3>B/G</h3>
+                        </div>
+                        <div class="item">
+                            <h2>WHITE</h2>
+                        </div>
+                        <div class="amount">
+                            <h4>40/10</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Spade Oak Pinot Gris, 2011, Gisborne</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>49.50/11</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Maude Pinot Gris, 2017, Otago</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>48/11</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Charles Wiffen Chardonnay, 2013, Otago</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>53/12</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Amisfield, Riesling, 2010, Otago</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>57/13</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Lamont Riesling, 2010, Otago</h4>
+                        </div><hr>
+                        <div class="amount">
+                            <h4>55/12</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Elephat Hill Viognier, 2013, Hawke's Bay</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>52/11</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Folium Sauvignon Blanc, 2011, Marlborough</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>120</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Billecart-Salmon Brut Reserve, France</h4>
+                        </div>
+                        <hr>
+                        <br><br>
+                        <div class="item">
+                            <h2>BEER AND CIDER</h2>
+                        </div>
+                        <div class="amount">
+                            <h4>11</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Garage project range</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>11</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Tuatara range</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>10</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Panhead range</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>10</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Coopers ale</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>11</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Heineken</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>10</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Moa cider</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>10</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Crooked cider</h4>
+                        </div>
+                        <hr>
+                        <br><br>
+                        <div class="item">
+                            <h2>NON-ALCOHOLIC</h2>
+                        </div>
+                        <div class="amount">
+                            <h4>4.00</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Mineral water</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>4.00</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Soft drinks</h4>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <h4>4.00</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Juice</h4>
+                        </div>
+                        <hr><div class="amount">
+                            <h4>4.50</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Coffee</h4>
+                        </div>
+                        <hr><div class="amount">
+                            <h4>3.50</h4>
+                        </div>
+                        <div class="item">
+                            <h4>Tea</h4>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--  Footer that is viewed across all pages of the website  -->
+    <footer class="footer">
+        <div class="flex-container">
+            <!--  A horizontal navigation bar that is responsive for mobile devices  -->
+            <nav class="navbar navbar-expand-sm fixed-bottom bg-dark navbar-dark">
+
+                <div class="footer-col">
+                    <!-- Contact section of the footer  -->
+                    <ul id="contact-details">
+                        <li>
+                            <h6>Contact Details: (09) 401 4019</h6>
+                        </li>
+                        <li>
+                            <h6>haukai@gmail.com</h6>
+                        </li>
+                        <li>
+                            <h6>1 Island Street, Kerikeri, Bay of Islands</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <!--  Copyright section of the footer  -->
+                    <div id="copyright">
+                        <p>ALL RIGHTS RESERVED. &copy; COPYRIGHT 2023 THE HAUKAI RESTAURANT LTD</p>
+                        <a href="privacy.pdf">
+                            <p title="Click to see the privacy policy">PRIVACY POLICY</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <!--  Social media section of the footer  -->
+                    <div id="social-media">
+                        <h4>Follow us</h4>
+                        <div class="social-links"></div>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+    </footer>
+
+</body>
+</html>

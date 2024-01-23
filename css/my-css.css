@@ -1,0 +1,347 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* Link status*/
+header a:link{
+    color: black;
+    background-color: rgba(115, 19, 19, 0.9);
+    
+}
+
+/*  active Link  */
+.active {
+    background-color:#777;
+}
+
+/* body element across all pages  */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*  header element across all pages  */
+header {
+    width: 100%;
+
+}
+
+/*  Collapsible Navigation Bar  */
+#collapsibleNavbar {
+    justify-content: right;
+
+}
+
+/*  Header list  */
+header li {
+    padding: 25px;
+    
+}
+
+/*  header image  */
+header img {
+    padding-top: 0;
+    border: none;
+}
+
+/*  main element  */
+main {
+    width: auto;
+    height: 900px;
+    padding-top: 10px;
+    margin-top: 80px;
+}
+
+/*  home page  */
+.title-page {
+    background-image: url("/images/background.jpg");
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*  company name image  */
+.company-name {
+    display: flex;
+    height: 460px;
+    width: 320px;
+    justify-content: center;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.company-name img {
+    border: 7px solid #777;
+    border-radius: 15px;
+}
+
+/*  call to action button  */
+.cta_button {
+    display: flex;
+    padding: 15px 30px 10px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(115, 19, 19, 0.9);
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+/*  footer  */
+footer {
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: rgb(90, 83, 53);
+    padding: 5px 7px 5px 7px;
+    color: whitesmoke;
+    padding-top:7px;
+    
+}
+
+/*  navigation bar  */
+.navbar {
+    width: 100%;  
+    justify-content: space-between;
+    text-align: center;
+}
+
+/*  contact details  */
+#contact-details {
+    list-style-type: none;
+}
+
+/*  food & beverage page  */
+.food-beverage {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    overflow: scroll;
+    background-image: url("/images/kawakawa_bw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.food-beverage h1{
+    background-color: #777;
+}
+
+/*  images  */
+div.image{
+    width: 15%;
+    float: left;
+}
+
+/*  items  */
+div.item{
+    width: 85%;
+    overflow:auto;
+}
+
+/*  amount  */
+div.amount{
+    width:15%;
+    float: right;
+}
+
+img {
+    border: #777 solid 1px;
+}
+
+/* menu tab content  */
+.tab-content {
+    max-width: 100%; 
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.tab-content h2 {
+    color: rgb(97, 11, 11);
+}
+
+/*  menu tabs  */
+#myTab {
+    margin-top: 28px;
+    background-color: #c5c4c4;
+    font-size: x-large;
+}
+
+#myTab all:link {
+    color:rgb(97, 11, 11);
+}
+
+#myTab all:hover {
+    background-color: #fa1212;
+}
+
+/*  beverage titles  */
+#beverages h3 {
+    color: rgb(97, 11, 11);
+
+}
+
+/*  contact details list  */
+ul#contact_details {
+    list-style-type: none;
+}
+
+/*  reservations layout  */
+.reservations {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(90, 83, 53);
+    margin-top: 80px;
+}
+
+/*  contact page  */
+.contact-page {
+    background-image: url("/images/weaving.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+
+/*  container layout  */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 90px;
+    padding: 30px;
+    background-color: #ebeff1;
+    border: #777 solid 3px;
+}
+
+/*  contact page container  */
+#contact-container {
+    background-color: #7e7805;
+}
+
+/* hours page layout  */
+.hours-page{
+    background-color: rgba(105, 123, 130, 0.67);
+    margin-bottom: 20px;
+}
+
+/*  flex-container  */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+/*  hours layout  */
+.hours {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border:#777 solid 2px;
+    border-radius: 5px;
+}
+
+/* picture */
+.picture {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:3%;
+}
+
+/*  waiata embedded video  */
+.waiata {
+    padding-left: 45px;
+}
+
+/*  google form  */
+.google-form {
+    margin-bottom: 200px;
+    overflow: scroll;
+   
+}
+
+/*  google map  */
+#google-map {
+    max-width: 100%;
+}
+
+/*  responsive layout  */
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #copyright {
+        display: none;
+    }
+
+    .title-page .img{
+        width: 30%;
+        height: 30%
+    }
+
+    .reservations .company-name {
+        display: none;
+    }
+
+    .reservations .picture {
+        display: none;
+    }
+
+    .hours-page .company-name {
+        display: none;
+    }
+
+    .contact-page .company-name {
+        display: none;
+    }
+
+    .responsiveCal {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+    
+    }
+
+    .responsiveCal iframe {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+    }
+
+    .container .image{
+        display: none;
+    }
+
+}
