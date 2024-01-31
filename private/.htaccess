@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Staff: Restricted Access"
+AuthUserFile C:\Users\Greig\OneDrive\BIT607\GitRepository\passwd\.htpasswd
+require valid-user
