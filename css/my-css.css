@@ -54,7 +54,7 @@ main {
 
 /*  home page  */
 .title-page {
-    background-image: url("../images/background.jpg");
+    background-image: url("/images/background.jpg");
     max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Reservations page</title>
+    <title>Food & Beverage page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -21,7 +21,7 @@
         <div class="flex-container">
             <!--  A horizontal navigation bar that is replaced by a hamburger menu for mobile devices  -->
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-                <a href="index.html" class="navbar-brand"><img src="images/logo.svg" height="85" width="125"
+                <a id="logo" href="index.html" class="navbar-brand"><img src="images/logo.svg" height="85" width="125"
                         alt="Haukai Logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
                                 <h3>Food & Beverage</h3>
                             </a>
                         </li>
-                        <li class="active">
+                        <li class="nav-item">
                             <a class="nav-link" href="reservations.html">
                                 <h3>Reservations</h3>
                             </a>
@@ -54,7 +54,7 @@
                                 <h3>Hours</h3>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="active">
                             <a class="nav-link" href="staff.html">
                                 <h3>Staff</h3>
                             </a>
@@ -64,68 +64,58 @@
             </nav>
         </div>
     </header>
-   
+    
     <!--  Main content  -->
-    <main class="reservations">
+    <main class="staff">
 
-        <div class="company-name">
-            <img src="images/Haukai.jpg" alt="Haukai Restaurant">
-        </div>
-        <!-- Reservations form-->
-        <iframe class="google-form"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSclEaROBF7y7zauOQQ_2A1o6wov368Bmk0exhKBY_3gwqyD7g/viewform?embedded=true"
-            width="640" height="881">
-        </iframe>
-        <!-- Kawakawa image-->
-        <div class="picture">
-            <img src="images/kawakawa_port.jpg" width="600" height="800" alt="kawakawa plant">
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="flex-container">
-            <nav class="navbar navbar-expand-sm bottom bg-dark navbar-dark">
-
-                <div class="footer-col">
-                    <!-- Contact section of the footer  -->
-                    <ul id="contact-details">
-                        <li>
-                            <h6>Contact Details: (09) 401 4019</h6>
-                        </li>
-                        <li>
-                            <h6>haukai@gmail.com</h6>
-                        </li>
-                        <li>
-                            <h6>1 Island Street, Kerikeri, Bay of Islands</h6>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <!--  Copyright section of the footer  -->
-                    <div id="copyright">
-                        <p>ALL RIGHTS RESERVED. &copy; COPYRIGHT 2023 THE HAUKAI RESTAURANT LTD</p>
-                        <a href="privacy.pdf">
-                            <p title="Click to see the privacy policy">PRIVACY POLICY</p>
-                        </a>
+        </main>
+        
+        <!--  Footer that is viewed across all pages of the website  -->
+        <footer class="footer">
+            <div class="flex-container">
+                <!--  A horizontal navigation bar that is responsive for mobile devices  -->
+                <nav class="navbar navbar-expand-sm fixed-bottom bg-dark navbar-dark">
+        
+                    <div class="footer-col">
+                        <!-- Contact section of the footer  -->
+                        <ul id="contact-details">
+                            <li>
+                                <h6>Contact Details: (09) 401 4019</h6>
+                            </li>
+                            <li>
+                                <h6>haukai@gmail.com</h6>
+                            </li>
+                            <li>
+                                <h6>1 Island Street, Kerikeri, Bay of Islands</h6>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="footer-col">
-                    <!--  Social media section of the footer  -->
-                    <div id="social-media">
-                        <h4>Follow us</h4>
-                        <div class="social-links"></div>
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <div class="footer-col">
+                        <!--  Copyright section of the footer  -->
+                        <div id="copyright">
+                            <p>ALL RIGHTS RESERVED. &copy; COPYRIGHT 2023 THE HAUKAI RESTAURANT LTD</p>
+                            <a href="privacy.pdf">
+                                <p title="Click to see the privacy policy">PRIVACY POLICY</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-
-            </nav>
-
-        </div>
-    </footer>
-
-
-</body>
-
-</html>
+                    <div class="footer-col">
+                        <!--  Social media section of the footer  -->
+                        <div id="social-media">
+                            <h4>Follow us</h4>
+                            <div class="social-links"></div>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+        
+                </nav>
+        
+            </div>
+        </footer>
+        
+        </body>
+        
+        </html>
