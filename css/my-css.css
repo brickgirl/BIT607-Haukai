@@ -1,4 +1,4 @@
-
+/*  Global Styles  */
 * {
     box-sizing: border-box;
 }
@@ -6,13 +6,7 @@
 /* Link status*/
 header a:link{
     color: black;
-    background-color: rgba(115, 19, 19, 0.9);
-    
-}
-
-/*  active Link  */
-.active {
-    background-color:#777;
+    background-color: rgba(115, 19, 19, 0.9);   
 }
 
 /* body element across all pages  */
@@ -23,19 +17,11 @@ body {
 /*  header element across all pages  */
 header {
     width: 100%;
-
-}
-
-/*  Collapsible Navigation Bar  */
-#collapsibleNavbar {
-    justify-content: right;
-
 }
 
 /*  Header list  */
 header li {
     padding: 25px;
-    
 }
 
 /*  header image  */
@@ -50,6 +36,26 @@ main {
     height: 900px;
     padding-top: 10px;
     margin-top: 80px;
+}
+
+/*  footer  */
+footer {
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: rgb(90, 83, 53);
+    padding: 5px 7px 5px 7px;
+    color: whitesmoke;
+    padding-top: 7px;
+}
+
+/*  Collapsible Navigation Bar  */
+#collapsibleNavbar {
+    justify-content: right;
+}
+
+/*  active Link  */
+.active {
+    background-color: #777;
 }
 
 /*  home page  */
@@ -90,17 +96,6 @@ main {
     font-size: 2em;
 }
 
-/*  footer  */
-footer {
-    width: 100%;
-    flex-wrap: wrap;
-    background-color: rgb(90, 83, 53);
-    padding: 5px 7px 5px 7px;
-    color: whitesmoke;
-    padding-top:7px;
-    
-}
-
 /*  navigation bar  */
 .navbar {
     width: 100%;  
@@ -123,6 +118,7 @@ footer {
     background-repeat: no-repeat;
 }
 
+/* food & beverage page heading1 */
 .food-beverage h1{
     background-color: #777;
 }
@@ -145,6 +141,7 @@ div.amount{
     float: right;
 }
 
+/* image border */
 img {
     border: #777 solid 1px;
 }
@@ -156,6 +153,7 @@ img {
     margin-right: 1%;
 }
 
+/* tab conten heading2  */
 .tab-content h2 {
     color: rgb(97, 11, 11);
 }
@@ -220,9 +218,16 @@ ul#contact_details {
 }
 
 /* hours page layout  */
-.hours-page{
+.hours-page {
     background-color: rgba(105, 123, 130, 0.67);
-    margin-bottom: 20px;
+}
+
+/* hours page container  */
+#hours-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 30px;    
 }
 
 /*  flex-container  */
@@ -230,17 +235,40 @@ ul#contact_details {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-/*  hours layout  */
-.hours {
+/*  hours & contact layout  */
+.hours,
+.contact {
     display: flex;
     flex-direction: column;
     background-color: #f5f5f5;
     padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border:#777 solid 2px;
     border-radius: 5px;
+}
+
+/*  hours page hour element  */
+.hours-page .hours {
+    width: 800px;
+}
+
+/*  waiata responsive frame  */
+#waiata {
+    margin: 2%;
+    width: 100%;
+}
+
+/*  hours page company name  */
+.hours-page .company-name {
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* picture */
@@ -251,8 +279,12 @@ ul#contact_details {
 }
 
 /*  waiata embedded video  */
-.waiata {
-    padding-left: 45px;
+.hours-container .waiata {
+    display:flex;
+    justify-content: left;
+    margin-left: 10px;
+    margin-right: auto;
+    padding-top: 1%;
 }
 
 /*  google form  */
@@ -266,6 +298,13 @@ ul#contact_details {
 #google-map {
     max-width: 100%;
 }
+
+/*  staff page  */
+.staff-page {
+    background-color: rgba(120, 95, 95, 0.314);
+    padding-left: 33%;
+}
+
 
 /*  responsive layout  */
 @media screen and (max-width:600px) {
@@ -289,16 +328,12 @@ ul#contact_details {
     .flex-container {
         flex-direction: column;
         flex-wrap: wrap;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .column {
-        width: 100%;
+        margin-top: 5%;
     }
 }
 
 @media only screen and (max-width:600px) {
+
     #copyright {
         display: none;
     }
@@ -315,29 +350,77 @@ ul#contact_details {
     .reservations .picture {
         display: none;
     }
+    
+    .contact-page {
+        margin-top: 0%;
+    }
 
-    .hours-page .company-name {
-        display: none;
+    .contact-page .hours {
+        display: flex;
+        flex-direction: row;
+        padding: 2px;
+        margin-top: 0%;
+        margin-bottom: 10px;
+    }
+
+    .staff-page {
+        padding-left: 0;
+    }
+    
+    #contact-container {
+        background-color:transparent;
+        border: none;
+        border: none;
     }
 
     .contact-page .company-name {
         display: none;
     }
 
-    .responsiveCal {
+    .responsiveFrame {
         position: relative;
-        padding-bottom: 75%;
-        height: 0;
-        overflow: hidden;
-    
+        padding-top: 20%;
+        margin-top: 0%;
+        width: 100%;
+        overflow: hidden;   
     }
 
-    .responsiveCal iframe {
+    .staff-page .responsiveFrame{
+        height: 150%;
+    }
+
+    .responsiveFrame iframe {
         position: absolute; 
         top: 0; 
         left: 0; 
         width: 100%; 
         height: 100%;
+    }
+
+    .hours-page .company-name {
+        display: none;
+    }
+
+    #hours-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 5px;
+        width: 80%;
+    }
+
+    #waiata {
+      height: 120%;  
+    }
+
+    .hours-page .hours {
+        margin-top: 25%;
+        max-width: 100%;
+    }
+   
+    .calendar .responsiveFrame{
+        margin-top: 10%;
+        padding-top: 100%;   
     }
 
     .container .image{

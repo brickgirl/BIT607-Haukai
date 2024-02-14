@@ -12,12 +12,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/my-css.css">
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <!-- Google tag (gtag.js)  Google Analytics  -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR3KXPJMG3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
+
         gtag('config', 'G-GR3KXPJMG3');
     </script>
 </head>
@@ -29,9 +30,8 @@
         <div class="flex-container">
             <!--  A horizontal navigation bar that is replaced by a hamburger menu for mobile devices  -->
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-                <a id="logo" href="../index.html" class="navbar-brand"><img src="../images/logo.svg" height="85" width="125"
-                        alt="Haukai Logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <a id="logo" href="../index.html" class="navbar-brand"><img src="../images/logo.svg" height="85" width="125" alt="Haukai Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">  <!--*-->
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -63,7 +63,7 @@
                             </a>
                         </li>
                         <li class="active">
-                            <a class="nav-link" href="../private/staff.html">
+                            <a class="nav-link" href="staff.html">
                                 <h3>Staff</h3>
                             </a>
                         </li>
@@ -74,58 +74,63 @@
     </header>
     
     <!--  Main content  -->
-    <main class="staff">
-        <h1>Staff Roster</h1>
-
-        <iframe src="https://1drv.ms/x/s!AkNid_Rs3YnF4B1dqTz4v5tqwiQw?e=Jum2a1" style="border:solid 2px #777" width="800" height="800" title="Staff Roster and Information"></iframe>
+    <!-- Staff page-->
+    <main class="staff-page">
+        <div class="flex-container">
+            <div class="col">
+                <!--  Staff Roster and Personal Details embedded excel spreadsheet  -->
+                <h1>Staff Roster and Personal Details</h1>
+                <div class="responsiveFrame">
+                    <iframe src="https://1drv.ms/x/s!AkNid_Rs3YnF4B1dqTz4v5tqwiQw?e=Hgi8oW" style="border:solid 2px #777" width="650" height="600" title="Staff Roster and Information"></iframe>>
+                </div>
+                <h3>Press the tabs to switch between the Staff Roster sheet or the Staff Information sheet.</h3>
+            </div>
+        </div>
     </main>
         
-        <!--  Footer that is viewed across all pages of the website  -->
-        <footer class="footer">
-            <div class="flex-container">
-                <!--  A horizontal navigation bar that is responsive for mobile devices  -->
-                <nav class="navbar navbar-expand-sm fixed-bottom bg-dark navbar-dark">
+    <!--  Footer that is viewed across all pages of the website  -->
+    <footer class="footer">
+        <div class="flex-container">
+            <!--  A horizontal navigation bar that is responsive for mobile devices  -->
+            <nav class="navbar navbar-expand-sm fixed-bottom bg-dark navbar-dark">
         
-                    <div class="footer-col">
-                        <!-- Contact section of the footer  -->
-                        <ul id="contact-details">
-                            <li>
-                                <h6>Contact Details: (09) 401 4019</h6>
-                            </li>
-                            <li>
-                                <h6>haukai@gmail.com</h6>
-                            </li>
-                            <li>
-                                <h6>1 Island Street, Kerikeri, Bay of Islands</h6>
-                            </li>
-                        </ul>
+                <div class="footer-col">
+                    <!-- Contact section of the footer  -->
+                    <ul id="contact-details">
+                        <li>
+                            <h6>(09) 401 4019</h6>
+                        </li>
+                        <li>
+                            <h6>haukai@gmail.com</h6>
+                        </li>
+                        <li>
+                            <h6>1 Island Street, Kerikeri</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <!--  Copyright section of the footer  -->
+                    <div id="copyright">
+                        <p>ALL RIGHTS RESERVED. &copy; COPYRIGHT 2023 THE HAUKAI RESTAURANT LTD</p>
+                        <a href="privacy.pdf">
+                            <p title="Click to see the privacy policy">PRIVACY POLICY</p>
+                        </a>
                     </div>
-                    <div class="footer-col">
-                        <!--  Copyright section of the footer  -->
-                        <div id="copyright">
-                            <p>ALL RIGHTS RESERVED. &copy; COPYRIGHT 2023 THE HAUKAI RESTAURANT LTD</p>
-                            <a href="privacy.pdf">
-                                <p title="Click to see the privacy policy">PRIVACY POLICY</p>
-                            </a>
-                        </div>
+                </div>
+                <div class="footer-col">
+                    <!--  Social media section of the footer  -->
+                    <div id="social-media">
+                        <h4>Follow us</h4>
+                        <div class="social-links"></div>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </div>
-                    <div class="footer-col">
-                        <!--  Social media section of the footer  -->
-                        <div id="social-media">
-                            <h4>Follow us</h4>
-                            <div class="social-links"></div>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-        
-                </nav>
-        
-            </div>
-        </footer>
-        
-    </body>
+                </div>       
+            </nav>
+        </div>
+    </footer>       
+</body>
         
 </html>
